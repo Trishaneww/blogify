@@ -1,0 +1,504 @@
+html {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+img {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 70%;
+}
+
+p {
+    color:black;
+    margin-bottom:0px;
+}
+/*-------------------------------------------------------- StartPage Background Styling ----------------------------------------------*/
+.homepage {
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 100vh;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+.company {
+    font-size: 1400%;
+    font-weight: bolder;
+    position: relative;
+    color: rgb(251, 254, 251);
+    align-self: center;
+    justify-self: center;
+    margin-bottom: 20px;
+}
+
+
+.title {
+    color: white;
+    text-align: center;
+    font-size: 250%;
+}
+
+/*-------------------------------------------------------- UserPage ----------------------------------------------*/
+.user-page {
+    display:flex;
+    flex-direction: column;
+    background-color: aquamarine;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.user-page h1 {
+    text-align: center;
+    color: white;
+    top: 20px;
+    margin: 120px 0px 40px;
+    font-size: 50px;
+}
+
+.user-post {
+    width: 70%;
+}
+
+.add-post {
+    width: 5%;
+    align-self: center;
+    margin-bottom: 100px;
+}
+
+/*assign full width inputs*/
+input {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 20px 0;
+    display: inline-block;
+    border: 1px solid aquamarine;
+    box-sizing: border-box;
+    color: #ccc;
+    text-align: center;
+}
+
+/*-------------------------------------------------------- FeedPage ----------------------------------------------*/
+.feed-page {
+    background-color: white;
+    height: auto;
+    margin-bottom: 100px;
+}
+
+.feed-page h1, .user-page h1 {
+    text-align: center;
+    color: rgb(232, 223, 223);
+    margin: 120px 0px 40px;
+    font-size: 50px;
+    margin-left: 9%;
+}
+
+.feed {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-left: 10%;
+}
+
+.posts {
+    display:flex;
+    flex-direction:column;
+    color: rgb(232, 223, 223);
+    height: 600px;
+    width: 400px;
+    border: 3px solid rgb(232, 223, 223);
+    text-align: center;
+    align-items: center;
+    border-radius: 6%;
+    margin-top: 8%;
+}
+
+.posts a {
+    text-decoration: none;
+    color: aquamarine;
+}
+
+.caption {
+    color: black;
+    border: 3px solid rgb(232, 223, 223);
+    height: 100px;
+    width: 270px;
+    margin-bottom: 30px;
+}
+
+label {
+    color: white;
+}
+
+.contact {
+    height: 50vh;
+    background-color: aquamarine;
+}
+
+.like-btn {
+    width: 10%;
+}
+
+.comment-content {
+    text-align: center;
+}
+
+.comment-box {
+    height: 100px;
+    width: 20%;
+    border:2px solid aquamarine;
+    margin-bottom: 1%;
+}
+
+/*-------------------------------------------------------- TopBar ----------------------------------------------*/
+/* Display set to none, only displays in mobile view */
+.topbar {
+    display: none;
+}
+
+/*-------------------------------------------------------- Sidebar ----------------------------------------------*/
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100%; 
+  width: 200px; 
+  position: fixed; 
+  z-index: 1; 
+  top: 0; 
+  left: 0;
+  background: aquamarine;
+  overflow-x: hidden;
+}
+
+.sidebar img {
+    width: 15%;
+    cursor: pointer;
+}
+
+.sidebar a {
+    text-align: center;
+    width: 100%;
+}
+.sidebar h1 {
+    font-size: 26px;
+    color: white;
+}
+
+.login-btn {
+    position: relative;
+    align-self: center;
+    width: 6%;
+}
+
+/*-------------------------------------------------------- Profile Page  ----------------------------------------------*/
+.view-profile {
+    width: 6%;
+    align-self: center;
+    margin-bottom: 300px;
+}
+
+.view-profile {
+    display:flex;
+    flex-direction: column;
+    text-align: center;
+    width:100%;
+}
+
+.change-profile {
+    width: 30%;
+    margin-bottom: 10px;
+}
+.profile-page {
+    display:flex;
+    flex-direction: column;
+}
+
+.preview-images {
+    background: aquamarine;
+    margin-top: 4%;
+    width: 60%;
+}
+
+.preview-profile {
+    margin-top: 4%;
+}
+.profile-img {
+    width:10%;
+    border: 5px solid rgb(232, 223, 223);
+    border-radius: 50%;
+    margin-left: 45%;
+}
+
+.profile-icon {
+    width:30%;
+    border: 5px solid rgb(232, 223, 223);
+    border-radius: 50%;
+    cursor:pointer;
+}
+
+h5 {
+    color:white;
+    font-size: 120%;
+}
+
+/*-------------------------------------------------------- Download & Upload Styling ----------------------------------------------*/
+.upload-icon {
+    width: 15%;
+}
+
+.download-icon {
+    margin-top: 2%;
+    width: 10%;
+}
+
+input[type="file"] {
+    display:none;
+}
+
+footer {
+    text-align: center;
+}
+
+/*-------------------------------------------------------- Modal Styling ----------------------------------------------*/
+/*set padding to the container*/
+.container {
+    display:flex;
+    flex-direction: column;
+    padding: 16px;
+    align-items: center;
+    background: aquamarine;
+}
+
+/*set the forgot password text*/
+span.psw {
+    float: right;
+    padding-top: 16px;
+}
+
+/*set the Modal background*/
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+}
+
+/*style the model content box*/
+.login-form, .signup-form, .upload-form, .profile-form {
+    text-align: center;
+    position: relative;
+    background: aquamarine;
+    margin: 5% auto 15% auto;
+    border: 1px solid aquamarine;
+    width: 30%;
+}
+
+/*style the close button*/
+.close {
+    position: absolute;
+    right: 25px;
+    top: 0;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/*-------------------------------------------------------- Button Styling ----------------------------------------------*/
+.submit-btn, .signup-btn {
+    width: 150px;
+    text-align: center;
+    align-self: center;
+    background-color: white;
+    border: 0.5px solid aquamarine;
+    color: #ccc;
+    border-radius: 10px;
+    padding: 15px 15px;
+    text-decoration: none;
+    transition: background-color 200ms ease-in-out;
+    cursor: pointer;
+}
+
+.signup-btn {
+    background: aquamarine;
+    color:white;
+    border: none;
+}
+
+/*-------------------------------------------------------- Transitions & Animation ----------------------------------------------*/
+.submit-btn:hover, .submit-btn:focus {
+    color:white;
+    background:aquamarine;
+    cursor: pointer;
+}
+
+.like-btn:hover, .like-btn:focus {
+    cursor: pointer;
+}
+
+.login-btn:hover, .login-btn:focus, .view-profile:hover, .view-profile:focus, .add-post:hover, .add-post:focus, 
+.upload-icon:hover, .upload-icon:focus, .change-profile:hover, .change-profile:focus {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: aquamarine;
+    border: none;
+}
+.comment-box:focus {
+    outline:aquamarine;
+}
+
+.close:hover,
+.close:focus {
+    color: #ccc;
+    cursor: pointer;
+}
+
+/* add zoom animation*/
+.animate {
+    -webkit-animation: animatezoom 0.6s;
+    animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+    from {
+        -webkit-transform: scale(0)
+    }
+    to {
+        -webkit-transform: scale(1)
+    }
+}
+  
+  ::-webkit-input-placeholder {
+    color:#ccc;
+    text-align: center;
+  }
+  
+  :-moz-placeholder {
+    color:#ccc;
+    text-align: center;
+  }
+
+@keyframes animatezoom {
+    from {
+        transform: scale(0)
+    }
+    to {
+        transform: scale(1)
+    }
+}
+
+/*-------------------------------------------------------- Mobile View ----------------------------------------------*/
+@media (max-width: 900px) {
+    .company {
+        font-size: 500%;
+    }
+    .feed {
+        margin: 0;
+        margin-top: 15%;
+    }
+    .posts {
+        margin: 10px;
+        width: 280px;
+    }
+    .posts h2 {
+        font-size: 110%;
+    }
+    .caption {
+        width: 200px;
+    }
+    .modal-content {
+        width: 60%;
+    }
+    .title {
+        font-size: 200%;
+    }
+    .close {
+        position: absolute;
+        right: 15px;
+        top: 0;
+        color: white;
+        font-size: 35px;
+        font-weight: bold;
+    }
+    .sidebar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 6%; 
+        width: 100%; 
+        position: fixed; 
+        bottom: 0;
+        top:auto; 
+        overflow: hidden;
+    }
+    .sidebar img, .topbar img {
+        width: 6%;
+    }
+    .sidebar h1 {
+        display:none;
+    }
+    #home-icon {
+        margin-left:20%;
+    }
+    #logout-icon {
+        margin-right:20%;
+    }
+    #profile-btn {
+        display:none;
+    }
+    #gallery-btn {
+        display:none;
+    }
+    .topbar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: 6%; 
+        width: 100%; 
+        position: fixed; 
+        top:0; 
+        left: 0;
+        background: aquamarine;
+        overflow: hidden;
+    }
+
+    .topbar a img{
+        width: 30px;
+    }
+    
+    #top-gallery-icon {
+        margin-right:2%;
+        margin-left: 21%;
+    }
+
+    #top-profile-icon{
+        margin-left:7%;
+    }
+
+    .topbar h1 {
+        font-size: 20px;
+        color: white;
+        margin:0;
+        margin-left: 4%;
+        margin-right: 10%;
+    }
+    .login-form, .signup-form, .upload-form, .profile-form {
+        width: 95%;
+    }
+     .login-btn{
+      width: 30%;
+    }
+}
