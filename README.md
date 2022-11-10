@@ -1,4 +1,4 @@
-# TEAGRAM
+# BLOGIFY
 
 ## Overview
 
