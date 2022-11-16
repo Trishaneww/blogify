@@ -3,34 +3,7 @@ const { Picture, User } = require('../models/');
 const Path = require("path");
 const { promises: Fs } = require('fs')
 const withAuth = require('../utils/auth')
-// router.get('/', async (req, res) => {
-//     try {
-//         // Get all projects and JOIN with user data
-//         const PostData = await Picture.findAll({
-//             where: { "user_id": req.session.user_id },
-//             include: [
-//                 {
-//                     model: User,
-//                     attributes: ['username'],
-//                 },
-//             ],
-//         });
 
-//         // Serialize data so the template can read it
-//         const posts = PostData.map((project) => project.get({ plain: true }));
-
-//         // Pass serialized data and session flag into template
-//         res.render('post', {
-//             layout: 'dashboard',
-//             posts,
-//             loggedIn: req.session.loggedIn
-//         });
-//     } catch (err) {
-//         res.status(500).json(err);
-//     }
-// });
-
-//////
 router.get('/', async (req, res) => {
     try {
         const pictureData = await Picture.findAll({
@@ -56,9 +29,7 @@ router.get('/', async (req, res) => {
 
 
 });
-////////
 
-//////////
 router.post("/",withAuth,  async (req, res) => {
     //start writing the upload functionality
     //creare a variable name that will hold the file
@@ -107,7 +78,6 @@ router.post("/",withAuth,  async (req, res) => {
     res.redirect('/dashboard');
 
 });
-//////
 
 router.get('/editPost/:id', async (req, res) => {
     try {
