@@ -33,5 +33,4 @@ const deletePost = async function(event){
 }
 
 document.querySelector('#edit-form').addEventListener('submit', editPost);
-
 document.querySelector('#delete-btn').addEventListener('click', deletePost);
