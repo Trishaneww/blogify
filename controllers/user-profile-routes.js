@@ -23,7 +23,6 @@ router.get('/profileimg', async (req, res) => {
     }
 });
 
-////////////
 router.post("/",withAuth, async (req, res) => {
     //start writing the upload functionality
     //creare a variable name that will hold the file
