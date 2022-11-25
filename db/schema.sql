@@ -1,3 +1,3 @@
-DROP DATABASE IF EXISTS teagram_db;
+DROP DATABASE IF EXISTS blogify_db;
 
-CREATE DATABASE teagram_db;
+CREATE DATABASE blogify_db;
