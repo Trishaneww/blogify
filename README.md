@@ -14,6 +14,12 @@ A tech blog for developers to connect with fellow developers within the industry
 - Users can easily logout by clicking the logout icon
 - BLOGIFY is fully responsive and intended for mobile use!
 
+## Usage
+
+- Clone this repo into your local machine
+- Once cloned, open up terminal and install all dependencies by running 'npm install'
+- Once intsallations are succesful, run 'npm start' to view portfolio in your localhost
+
 Link to [deployed application](https://blogify-fordevelopers.herokuapp.com/)
 
 ## Credit
